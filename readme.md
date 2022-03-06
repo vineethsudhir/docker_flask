@@ -37,6 +37,10 @@
 
 .pylintrc is the config for pylint .coveragerc is the config for coverage setup.py is a config file for pytest
 
-[My App](https://vs56-dockerflask.herokuapp.com/)
+[App (depricated)](https://vs56-dockerflask.herokuapp.com/)
+
+[Development app](https://vs56-dev.herokuapp.com/)
+
+[Production app](https://vs56-prod.herokuapp.com/)
 
 # Test Changed
