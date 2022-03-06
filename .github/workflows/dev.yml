@@ -6,7 +6,7 @@ on:
       - 'master'
 
 jobs:
-  runtest:
+  run_pytest:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -21,13 +21,13 @@ jobs:
       - name: Test with pytest
         run: pytest -vv
 
-  deploy:
+  deploy_heroku:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
         with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-          heroku_app_name: "vs56-dockerflask" #Must be unique in Heroku
+          heroku_app_name: "vs56-dev" #Must be unique in Heroku
           heroku_email: "vs56@njit.edu"
           usedocker: true
